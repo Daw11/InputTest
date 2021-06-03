@@ -14,7 +14,7 @@ public class Main {
         Integer maxVal;
         String maxPos;
 
-        if( a > b ) {
+        if( a >= b ) {
             maxVal = a;
             maxPos = "PRIMO";
         }
