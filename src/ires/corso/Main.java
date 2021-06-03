@@ -11,23 +11,23 @@ public class Main {
         Integer b = in.nextInt();
         System.out.println("Inserisci il terzo valore: ");
         Integer c = in.nextInt();
-        Integer maxVal, maxPos;
+        Integer maxVal;
+        String maxPos;
 
         if( a > b ) {
             maxVal = a;
-            maxPos = 0;
+            maxPos = "PRIMO";
         }
         else {
             maxVal = b;
-            maxPos = 1;
+            maxPos = "SECONDO";
         }
 
         if( c > maxVal ) {
             maxVal = c;
-            maxPos = 2;
+            maxPos = "TERZO";
         }
 
-        String[] positions = {"PRIMO", "SECONDO", "TERZO"};
-        System.out.println("Il numero maggiore che hai inserito è il " + positions[maxPos] + " e vale: " + maxVal);
+        System.out.println("Il numero maggiore che hai inserito è il " + maxPos + " e vale: " + maxVal);
     }
 }
